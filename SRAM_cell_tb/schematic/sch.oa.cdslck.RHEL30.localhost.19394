@@ -12,10 +12,5 @@ ProcessCreationTime_Readable   Tue Apr 28 15:23:11 2020 CST
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-<<<<<<< HEAD:Precharge/schematic/sch.oa.cdslck
-FilePathUsedToEditLock         /home/student/Desktop/Workspace/processor/Precharge/schematic/sch.oa.cdslck
-TimeEditLocked                 Tue Apr 28 20:37:30 2020 CST
-=======
 FilePathUsedToEditLock         /home/student/Desktop/Workspace/processor/SRAM_cell_tb/schematic/sch.oa.cdslck.dirlck
 TimeEditLocked                 Tue Apr 28 17:02:17 2020 CST
->>>>>>> 4e6ee901473cf2ff440f94694ea84ac03c585e7a:SRAM_cell_tb/schematic/sch.oa.cdslck
