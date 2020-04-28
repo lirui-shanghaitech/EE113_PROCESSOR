@@ -12,5 +12,5 @@ ProcessCreationTime_Readable   Tue Apr 28 14:55:47 2020 CST
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         /home/student/Desktop/Workspace/processor/SRAM_16#2a1/symbol/symbol.oa.cdslck
-TimeEditLocked                 Tue Apr 28 20:30:20 2020 CST
+FilePathUsedToEditLock         /home/student/Desktop/Workspace/processor/SRAM_16#2a1/schematic/sch.oa.cdslck
+TimeEditLocked                 Tue Apr 28 21:40:16 2020 CST

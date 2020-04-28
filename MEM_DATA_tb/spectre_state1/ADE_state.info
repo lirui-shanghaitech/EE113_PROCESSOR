@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("processor" "MEM_DATA_tb" "schematic" "spectre")
+descriptionText = "None"
