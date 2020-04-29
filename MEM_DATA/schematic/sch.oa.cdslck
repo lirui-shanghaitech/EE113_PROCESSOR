@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      student
 HostName                       localhost
-ProcessIdentifier              14138
-ProcessCreationTime_UTC        1588056947
-ProcessCreationTime_Readable   Tue Apr 28 14:55:47 2020 CST
+ProcessIdentifier              19394
+ProcessCreationTime_UTC        1588058591
+ProcessCreationTime_Readable   Tue Apr 28 15:23:11 2020 CST
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         /home/student/Desktop/Workspace/processor/SRAM_16#2a8/schematic/sch.oa.cdslck
-TimeEditLocked                 Tue Apr 28 21:41:35 2020 CST
+FilePathUsedToEditLock         /home/student/Desktop/Workspace/processor/MEM_DATA/schematic/sch.oa.cdslck
+TimeEditLocked                 Wed Apr 29 19:23:15 2020 CST
