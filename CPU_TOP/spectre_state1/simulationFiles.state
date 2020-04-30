@@ -1,6 +1,6 @@
 allVectorFiles nil
 VectorFile nil
-allStimulusFiles nil
+allStimulusFiles ((t "/home/student/Desktop/Workspace/processor/cpu_stimulus.txt"))
 VcdInfoFile ""
 allDefinitionFiles nil
 includePath ""
@@ -9,5 +9,5 @@ definitionFiles nil
 VcdFile ""
 allIncludedPaths nil
 EVcdFile ""
-stimulusFile nil
+stimulusFile ("/home/student/Desktop/Workspace/processor/cpu_stimulus.txt")
 hlcheck "off"

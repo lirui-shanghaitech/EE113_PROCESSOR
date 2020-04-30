@@ -9,7 +9,8 @@ parameters dperi = 2 * peri
 // Cell name: CPU_TOP
 // View name: schematic
 
-vdd (vdd! 0) vsource dc  = dc_v
+vdd (VDD 0) vsource dc  = dc_v
+gnd (GND 0) vsource dc  = 0
 clk (CLK 0) vsource val1 = dc_v val0=0 data = "101010101010101010101010" delay=0 rise=100p fall=100p period=peri type=bit
 
 // Instruction data: LW r0 b0000; LW r1 b0001; ADD r0 r1 r2; 

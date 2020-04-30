@@ -46,7 +46,7 @@ analysis(tran options maxstep) ""
 analysis(tran options step) ""
 analysis(tran options outputstart) ""
 analysis(tran fields enable) (t)
-analysis(tran fields stop) "40n"
+analysis(tran fields stop) "10n"
 analysis(tran fields errpreset) ""
 analysis(tran fields tranNoise) ""
 analysis(tran fields noisefmax) ""
