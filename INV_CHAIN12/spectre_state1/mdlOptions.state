@@ -1,0 +1,10 @@
+(mdlOpts additionals) ""
+(mdlOpts cellName) ""
+(mdlOpts libName) ""
+(mdlOpts formatType) "Default"
+(mdlOpts precFormat) "%.15g"
+(mdlOpts mdlFrom) "From File"
+(mdlOpts engFormat) 6
+(mdlOpts viewName) ""
+(mdlOpts mdlFile) ""
+(mdlOpts enable) nil
