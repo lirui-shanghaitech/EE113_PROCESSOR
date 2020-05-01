@@ -1,0 +1,42 @@
+simulator lang=spectre
+
+global 0
+parameters peri = 2n
+parameters dc_v = 1.8
+parameters dperi = 2 * peri
+
+// Library name: processor
+// Cell name: CPU_TOP
+// View name: schematic
+
+vdd (VDD 0) vsource dc  = dc_v
+gnd (GND 0) vsource dc  = 0
+clk (CLK 0) vsource val1 = dc_v val0=0 data = "101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010" delay=0 rise=100p fall=100p period=peri type=bit
+
+
+// Data: 
+datain0 (DATAIN\\<0\\> 0) vsource val1=dc_v val0=0   data = "1010000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+datain1 (DATAIN\\<1\\> 0) vsource val1=dc_v val0=0   data = "1100000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+datain2 (DATAIN\\<2\\> 0) vsource val1=dc_v val0=0   data = "0010000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+datain3 (DATAIN\\<3\\> 0) vsource val1=dc_v val0=0   data = "0000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+
+datain4 (DATAIN\\<4\\> 0) vsource val1=dc_v val0=0   data = "0000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+datain5 (DATAIN\\<5\\> 0) vsource val1=dc_v val0=0   data = "0000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+datain6 (DATAIN\\<6\\> 0) vsource val1=dc_v val0=0   data = "0000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+datain7 (DATAIN\\<7\\> 0) vsource val1=dc_v val0=0   data = "0000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+
+// Data addr:
+daddr0 (ADDR\\<0\\> 0) vsource val1=dc_v val0=0   data = "010000" delay=0 rise=100p fall=100p period=dperi type=bit
+daddr1 (ADDR\\<1\\> 0) vsource val1=dc_v val0=0   data = "001000" delay=0 rise=100p fall=100p period=dperi type=bit
+daddr2 (ADDR\\<2\\> 0) vsource val1=dc_v val0=0   data = "000000" delay=0 rise=100p fall=100p period=dperi type=bit
+daddr3 (ADDR\\<3\\> 0) vsource val1=dc_v val0=0   data = "000000" delay=0 rise=100p fall=100p period=dperi type=bit
+
+// Data write enable:
+dwe (WE 0) vsource val1=dc_v val0=0   data = "0101010000" delay=0 rise=100p fall=100p period=peri type=bit
+
+
+
+
+
+
+

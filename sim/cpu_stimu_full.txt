@@ -1,0 +1,73 @@
+simulator lang=spectre
+
+global 0
+parameters peri = 2n
+parameters dc_v = 1.8
+parameters dperi = 2 * peri
+
+// Library name: processor
+// Cell name: CPU_TOP
+// View name: schematic
+
+vdd (VDD 0) vsource dc  = dc_v
+gnd (GND 0) vsource dc  = 0
+clk (CLK 0) vsource val1 = dc_v val0=0 data = "101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010" delay=0 rise=100p fall=100p period=peri type=bit
+
+// Instruction data: LW r0 b0000; LW r1 b0001; ADD r0 r1 r2; 
+idatain0 (Idatain\\<0\\> 0) vsource val1=dc_v val0=0   data = "0100000011000000" delay=0 rise=100p fall=100p period=dperi type=bit
+idatain1 (Idatain\\<1\\> 0) vsource val1=dc_v val0=0   data = "0001111101000000" delay=0 rise=100p fall=100p period=dperi type=bit
+idatain2 (Idatain\\<2\\> 0) vsource val1=dc_v val0=0   data = "0000100000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+idatain3 (Idatain\\<3\\> 0) vsource val1=dc_v val0=0   data = "0000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+
+idatain4 (Idatain\\<4\\> 0) vsource val1=dc_v val0=0   data = "0010000010000000" delay=0 rise=100p fall=100p period=dperi type=bit
+idatain5 (Idatain\\<5\\> 0) vsource val1=dc_v val0=0   data = "0000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+idatain6 (Idatain\\<6\\> 0) vsource val1=dc_v val0=0   data = "0010100000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+idatain7 (Idatain\\<7\\> 0) vsource val1=dc_v val0=0   data = "0000100000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+
+idatain8 (Idatain\\<8\\> 0) vsource val1=dc_v val0=0   data = "0000000010000000" delay=0 rise=100p fall=100p period=dperi type=bit
+idatain9 (Idatain\\<9\\> 0) vsource val1=dc_v val0=0   data = "0101001000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+idatain10 (Idatain\\<10\\> 0) vsource val1=dc_v val0=0 data = "0001100001000000" delay=0 rise=100p fall=100p period=dperi type=bit
+idatain11 (Idatain\\<11\\> 0) vsource val1=dc_v val0=0 data = "0000000100000000" delay=0 rise=100p fall=100p period=dperi type=bit
+
+idatain12 (Idatain\\<12\\> 0) vsource val1=dc_v val0=0 data = "1101100100000000" delay=0 rise=100p fall=100p period=dperi type=bit
+idatain13 (Idatain\\<13\\> 0) vsource val1=dc_v val0=0 data = "0000111001000000" delay=0 rise=100p fall=100p period=dperi type=bit
+idatain14 (Idatain\\<14\\> 0) vsource val1=dc_v val0=0 data = "0000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+idatain15 (Idatain\\<15\\> 0) vsource val1=dc_v val0=0 data = "0000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+
+// Instruction address:
+iaddr0 (Imemaddr_ex\\<0\\> 0) vsource val1=dc_v val0=0   data = "0101010101000000" delay=0 rise=100p fall=100p period=dperi type=bit
+iaddr1 (Imemaddr_ex\\<1\\> 0) vsource val1=dc_v val0=0   data = "0011001100000000" delay=0 rise=100p fall=100p period=dperi type=bit
+iaddr2 (Imemaddr_ex\\<2\\> 0) vsource val1=dc_v val0=0   data = "0000111100000000" delay=0 rise=100p fall=100p period=dperi type=bit
+iaddr3 (Imemaddr_ex\\<3\\> 0) vsource val1=dc_v val0=0   data = "0000000011000000" delay=0 rise=100p fall=100p period=dperi type=bit
+
+// Instruction write enable:
+iwe (WE_external 0) vsource val1=dc_v val0=0   data = "010101010101010101010000" delay=0 rise=100p fall=100p period=peri type=bit
+
+// Data: 
+datain0 (Dmemdata_ex\\<0\\> 0) vsource val1=dc_v val0=0   data = "00000000001010000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+datain1 (Dmemdata_ex\\<1\\> 0) vsource val1=dc_v val0=0   data = "00000000001100000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+datain2 (Dmemdata_ex\\<2\\> 0) vsource val1=dc_v val0=0   data = "00000000000010000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+datain3 (Dmemdata_ex\\<3\\> 0) vsource val1=dc_v val0=0   data = "00000000000000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+
+datain4 (Dmemdata_ex\\<4\\> 0) vsource val1=dc_v val0=0   data = "0000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+datain5 (Dmemdata_ex\\<5\\> 0) vsource val1=dc_v val0=0   data = "0000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+datain6 (Dmemdata_ex\\<6\\> 0) vsource val1=dc_v val0=0   data = "0000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+datain7 (Dmemdata_ex\\<7\\> 0) vsource val1=dc_v val0=0   data = "0000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+
+// Data addr:
+daddr0 (Dmemdaddr_ex\\<0\\> 0) vsource val1=dc_v val0=0   data = "0000000000010000" delay=0 rise=100p fall=100p period=dperi type=bit
+daddr1 (Dmemdaddr_ex\\<1\\> 0) vsource val1=dc_v val0=0   data = "0000000000001000" delay=0 rise=100p fall=100p period=dperi type=bit
+daddr2 (Dmemdaddr_ex\\<2\\> 0) vsource val1=dc_v val0=0   data = "0000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+daddr3 (Dmemdaddr_ex\\<3\\> 0) vsource val1=dc_v val0=0   data = "0000000000000000" delay=0 rise=100p fall=100p period=dperi type=bit
+
+// Data write enable:
+dwe (Dmem_ex 0) vsource val1=dc_v val0=0   data = "000000000000000000000101010000" delay=0 rise=100p fall=100p period=peri type=bit
+
+// Clear signal, to start the CPU
+clear (CLEAR 0) vsource val1=dc_v val0=0   data = "000000000000000000000000010000" delay=0 rise=100p fall=100p period=peri type=bit
+
+
+
+
+
+
