@@ -60,7 +60,7 @@ If the operate instruction is **ARITH** . We need compute flag to indicate which
 //RC = RA Operation_flag RB 
 ```
 |**ALU compute flag code** |**ALU compute sign** |**Operation** |
-|:----|:----|:----|:----|:----|:----|
+|:----|:----|:----|
 |000 |ADD |RC = RA + RB |
 |001 |SUB |RC = RA - RB |
 |010 |AND |RC = RA & RB |
@@ -120,7 +120,7 @@ In this project, you must have **5 input ports** and **2 output ports** .
 ### Input ports: 
 
 |**Port Name** |**Data length** |
-|:----:|:----|:----:|:----|
+|:----:|:----|
 |DataA_in |4 bits |
 |DataB_in |4 bits |
 |Control_flag |3 bits |
@@ -130,7 +130,7 @@ In this project, you must have **5 input ports** and **2 output ports** .
 ### Output ports: 
 
 |**Port Name** |**Data length** |
-|:----:|:----|:----:|:----|
+|:----:|:----|
 |Zero_flag |1 bit |
 |Data_out |4 bits |
 
@@ -165,7 +165,7 @@ Implement **2 additional instructions (LOAD, STORE)** .
 ### Input ports: 
 
 |**Port Name** |**Data length** |
-|:----:|:----|:----:|:----|
+|:----:|:----|
 |Ra_addr |3 bits |
 |Rb_addr |3 bits |
 |Data_addr |3 bits |
@@ -179,7 +179,7 @@ Implement **2 additional instructions (LOAD, STORE)** .
 ### Output ports: 
 
 |**Port Name** |**Data length** |
-|:----:|:----|:----:|:----|
+|:----:|:----|
 |Zero_flag |1 bit |
 
 ### Execution flow 
@@ -206,7 +206,7 @@ Finish this 4 bits processor.
 |ARITH |0000 RA_address RB_address RC_address Operation_flag |
 
 |**ALU compute flag code** |**ALU compute sign** |**Operation** |
-|:----:|:----|:----:|:----|:----:|:----|
+|:----:|:----|:----:|
 |000 |ADD |RC = RA + RB |
 |001 |SUB |RC = RA - RB |
 |010 |AND |RC = RA & RB |
