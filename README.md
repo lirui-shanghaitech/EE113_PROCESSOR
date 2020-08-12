@@ -198,7 +198,7 @@ Implement **2 additional instructions (LOAD, STORE)** .
 Finish this 4 bits processor. 
 
 |**Instructions** |**Code example** |
-|:----:|:----|:----:|:----|
+|:----:|:----|
 |LOAD |0001 RA_address 000 000 Data_memory_address |
 |STORE |0010 RA_address 000 000 Data_memory_address |
 |BEQ |0011 RA_address RB_address 000 Instruction_memory_address |
