@@ -42,7 +42,7 @@ All the legal instructions are 16 bits. For example:
 0100 000 000 000 110 
 ```
 |**Operate code** |**Operate instruction** |
-|:----|:----|:----|:----|
+|:----|:----|
 |0000 |ARITH (operate ALU) |
 |0001 |LOAD |
 |0010 |STORE |
